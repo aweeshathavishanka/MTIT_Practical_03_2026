@@ -1,0 +1,8 @@
+#!/bin/sh
+'''exec' "/Volumes/Awee's NVME/Aweesha's OS/01_University/MTIT- Practical/MTIT_Practical_03/microservices-fastapi/venv/bin/python3.11" "$0" "$@"
+' '''
+import sys
+from httpx import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
